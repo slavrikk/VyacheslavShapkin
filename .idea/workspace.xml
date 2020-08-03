@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/DataProviders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/TestDivDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/TestMultiLong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSqrtDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSubDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSumDouble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +30,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test\java" />
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin" />
     </key>
@@ -40,11 +52,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596458175456</updated>
-      <workItem from="1596458179757" duration="989000" />
+      <workItem from="1596458179757" duration="1644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="164" key="FileChooserDialogImpl" timestamp="1596459665235">
+      <screen x="0" y="0" width="1600" height="819" />
+    </state>
+    <state x="580" y="164" key="FileChooserDialogImpl/0.0.1600.819@0.0.1600.819" timestamp="1596459665235" />
   </component>
 </project>

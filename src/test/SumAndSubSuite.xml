@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="sumAndSubSuite" parallel="methods">
+
+    <test name="testSubDouble">
+        <classes>
+            <class name="hw1.TestSubDouble" />
+        </classes>
+    </test>
+
+    <test name="testSumDouble">
+        <classes>
+            <class name="hw1.TestSumDouble" />
+        </classes>
+    </test>
+
+</suite>
