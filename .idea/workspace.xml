@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/AllTestsSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AllTestsSuite.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -35,14 +37,31 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test\java" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\main\resources" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="C:/Users/slk/IdeaProjects/VyacheslavShapkin/src/test/AllTestsSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="VyacheslavShapkin" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/AllTestsSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/slk/IdeaProjects/VyacheslavShapkin/src/test/AllTestsSuite.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
