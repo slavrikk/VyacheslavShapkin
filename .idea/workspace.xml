@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/AllTestsSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AllTestsSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MultiAndDivSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MultiAndDivSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/SumAndSubSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SumAndSubSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/DataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/TestDivDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/TestDivDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/TestMultiLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/TestMultiLong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/TestSqrtDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSqrtDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/TestSubDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSubDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hw1/TestSumDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw1/TestSumDouble.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +111,7 @@
       <updated>1596458175456</updated>
       <workItem from="1596458179757" duration="2637000" />
       <workItem from="1596530225069" duration="3592000" />
-      <workItem from="1596624690417" duration="1875000" />
+      <workItem from="1596624690417" duration="3019000" />
     </task>
     <servers />
   </component>
