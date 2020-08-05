@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 public class TestMultiLong {
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "multi-long")
-    public void testMultiDouble(long a, long b, long expectedResult){
-        Calculator calculator= new Calculator();
-        long actualResult = calculator.mult(a,b);
+    public void testMultiDouble(long a, long b, long expectedResult) {
+        Calculator calculator = new Calculator();
+        long actualResult = calculator.mult(a, b);
         Assert.assertEquals(actualResult, expectedResult);
     }
 }

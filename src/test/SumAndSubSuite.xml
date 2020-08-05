@@ -5,13 +5,13 @@
 
     <test name="testSubDouble">
         <classes>
-            <class name="hw1.TestSubDouble" />
+            <class name="hw1.TestSubDouble"/>
         </classes>
     </test>
 
     <test name="testSumDouble">
         <classes>
-            <class name="hw1.TestSumDouble" />
+            <class name="hw1.TestSumDouble"/>
         </classes>
     </test>
 

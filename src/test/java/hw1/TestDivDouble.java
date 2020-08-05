@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 public class TestDivDouble {
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "div-double")
-    public void testDivDouble(double a, double b, double expectedResult){
+    public void testDivDouble(double a, double b, double expectedResult) {
         Calculator calculator = new Calculator();
-        double actualResult = calculator.div(a,b);
+        double actualResult = calculator.div(a, b);
         Assert.assertEquals(actualResult, expectedResult, 0.05);
     }
 }
