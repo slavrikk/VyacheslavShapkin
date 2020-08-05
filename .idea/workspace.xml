@@ -53,7 +53,10 @@
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+<<<<<<< HEAD
+=======
+  <component name="RunManager" selected="Maven.Unnamed">
+>>>>>>> 24f246cdbf0a27d7a59f90982318a8f194017a0c
     <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
