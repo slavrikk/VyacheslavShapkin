@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="allTests" parallel="methods">
+
+    <test name="testDivDouble">
+        <classes>
+            <class name="hw1.TestDivDouble"/>
+        </classes>
+    </test>
+
+    <test name="testMultiLong">
+        <classes>
+            <class name="hw1.TestMultiLong"/>
+        </classes>
+    </test>
+
+    <test name="testSqrtDouble">
+        <classes>
+            <class name="hw1.TestSqrtDouble"/>
+        </classes>
+    </test>
+
+    <test name="testSubDouble">
+        <classes>
+            <class name="hw1.TestSubDouble"/>
+        </classes>
+    </test>
+
+    <test name="testSumDouble">
+        <classes>
+            <class name="hw1.TestSumDouble"/>
+        </classes>
+    </test>
+
+</suite>

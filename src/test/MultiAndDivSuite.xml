@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="divAndMultiTests" parallel="methods">
+
+    <test name="testDivDouble">
+        <classes>
+            <class name="hw1.TestDivDouble"/>
+        </classes>
+    </test>
+
+    <test name="testMultiLong">
+        <classes>
+            <class name="hw1.TestMultiLong"/>
+        </classes>
+    </test>
+
+</suite>
