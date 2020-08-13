@@ -46,9 +46,9 @@ public class TestExerciseTwo {
   @Test(priority = 2)
   public void testLoginName() {
 
-    WebElement icon = driver.findElement(By.xpath("//img[@id='user-icon']"));
+    WebElement icon = driver.findElement(By.id("user-icon"));
     icon.click();
-    WebElement inputName = driver.findElement(By.xpath("//input[@id='name']"));
+    WebElement inputName = driver.findElement(By.id("name"));
     inputName.sendKeys("Roman");
     WebElement inputPassword = driver.findElement(By.xpath("//input[@id='password']"));
     inputPassword.sendKeys("Jdi1234");
