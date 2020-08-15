@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/DifferentElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/DifferentElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/components/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/components/Footer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/components/HeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/components/HeaderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/components/LeftMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/components/LeftMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hw3/pages/components/LogComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hw3/pages/components/LogComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +54,7 @@
   <component name="MavenImportPreferences">
     <option name="enabledProfiles">
       <list>
-        <option value="HW3" />
+        <option value="HW4" />
       </list>
     </option>
     <option name="disabledProfiles">
@@ -70,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -78,15 +85,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test\java" />
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hw4.ex2" />
+      <recent name="hw4.ex1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkThreeSuite.xml">
+  <component name="RunManager" selected="Maven.Unnamed">
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw3.Test" />
       <module name="VyacheslavShapkin" />
@@ -100,27 +112,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="allure:report" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map>
+                <entry key="HW4" value="true" />
+                <entry key="SumAndSubSuite" value="false" />
+                <entry key="AllTestsSuite" value="false" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkThreeSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VyacheslavShapkin" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/HomeWorkThreeSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPageObjectExOne" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="VyacheslavShapkin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hw3.ex1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hw3.ex1" />
-      <option name="MAIN_CLASS_NAME" value="hw3.ex1.TestPageObjectExOne" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -164,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.Unnamed" />
         <item itemvalue="TestNG.C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkThreeSuite.xml" />
         <item itemvalue="TestNG.TestPageObjectExTwo" />
         <item itemvalue="TestNG.TestPageObjectExTwo.testSelectAndLogsCheckBoxes" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="TestNG.TestPageObjectExOne" />
       </list>
     </recent_temporary>
   </component>
@@ -188,11 +212,15 @@
       <workItem from="1596962674219" duration="20267000" />
       <workItem from="1596983919595" duration="15000" />
       <workItem from="1596994648839" duration="11035000" />
+      <workItem from="1597511732061" duration="6020000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="allure.properties" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -226,26 +254,26 @@
       <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state x="580" y="164" key="FileChooserDialogImpl/0.0.1600.819@0.0.1600.819" timestamp="1596459665235" />
-    <state width="1237" height="175" key="GridCell.Tab.0.bottom" timestamp="1597006534494">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1557" height="243" key="GridCell.Tab.0.bottom" timestamp="1597517746288">
+      <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state width="1237" height="175" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="209" key="GridCell.Tab.0.bottom/0.0.1600.819@0.0.1600.819" timestamp="1596637124040" />
-    <state width="1237" height="175" key="GridCell.Tab.0.center" timestamp="1597006534494">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1557" height="243" key="GridCell.Tab.0.bottom/0.0.1600.819@0.0.1600.819" timestamp="1597517746288" />
+    <state width="1557" height="243" key="GridCell.Tab.0.center" timestamp="1597517746288">
+      <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state width="1237" height="175" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="209" key="GridCell.Tab.0.center/0.0.1600.819@0.0.1600.819" timestamp="1596637124040" />
-    <state width="1237" height="175" key="GridCell.Tab.0.left" timestamp="1597006534493">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1557" height="243" key="GridCell.Tab.0.center/0.0.1600.819@0.0.1600.819" timestamp="1597517746288" />
+    <state width="1557" height="243" key="GridCell.Tab.0.left" timestamp="1597517746288">
+      <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state width="1237" height="175" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597006534493" />
-    <state width="1557" height="209" key="GridCell.Tab.0.left/0.0.1600.819@0.0.1600.819" timestamp="1596637124040" />
-    <state width="1237" height="175" key="GridCell.Tab.0.right" timestamp="1597006534494">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1557" height="243" key="GridCell.Tab.0.left/0.0.1600.819@0.0.1600.819" timestamp="1597517746288" />
+    <state width="1557" height="243" key="GridCell.Tab.0.right" timestamp="1597517746288">
+      <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state width="1237" height="175" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="209" key="GridCell.Tab.0.right/0.0.1600.819@0.0.1600.819" timestamp="1596637124040" />
+    <state width="1557" height="243" key="GridCell.Tab.0.right/0.0.1600.819@0.0.1600.819" timestamp="1597517746288" />
     <state x="241" y="0" key="SettingsEditor" timestamp="1597000413472">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -255,9 +283,10 @@
       <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state x="182" y="70" key="new project wizard/0.0.1600.819@0.0.1600.819" timestamp="1596624714194" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1596983163197">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="379" y="1" width="840" height="817" key="search.everywhere.popup" timestamp="1597413424141">
+      <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1596983163197" />
+    <state x="379" y="1" width="840" height="817" key="search.everywhere.popup/0.0.1600.819@0.0.1600.819" timestamp="1597413424141" />
   </component>
 </project>

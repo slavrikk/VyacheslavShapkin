@@ -3,6 +3,7 @@ package hw3.pages;
 import hw3.pages.components.Footer;
 import hw3.pages.components.HeaderMenu;
 import hw3.pages.components.LeftMenu;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -52,15 +53,17 @@ public class HomePage {
         footer = new Footer(driver);
     }
 
-
+    @Step("Open index page")
     public void open() {
         driver.navigate().to("https://jdi-testing.github.io/jdi-light/index.html");
     }
 
+    @Step("Get title")
     public String getTitle() {
         return driver.getTitle();
     }
 
+    @Step("Login on the site with parameters: login = {login}, password= {password}")
     public void login(String login, String password) {
         userIcon.click();
         inputName.sendKeys(login);
@@ -68,14 +71,17 @@ public class HomePage {
         enter.click();
     }
 
+    @Step("Get user name")
     public String getUserName() {
         return userName.getText();
     }
 
+    @Step("Get quantity header menu items")
     public int quantityHeaderMenu() {
         return headerMenu.getListHeaderItems().size();
     }
 
+    @Step("Get header menu item by name - {name}")
     public String getTextHeaderMenuItem(String name) {
         String nameUp = name.toUpperCase();
         List<WebElement> webElements = headerMenu.getListHeaderItems();
@@ -90,11 +96,12 @@ public class HomePage {
         return findElement;
     }
 
-
+    @Step("Quantity of images")
     public int quantityImages() {
         return imagesList.size();
     }
 
+    @Step("Find out the text and image - {text}")
     public String findTextUnderImage(String text) {
 
         String findElement = "";
@@ -109,6 +116,7 @@ public class HomePage {
         return findElement;
     }
 
+    @Step("Get service header menu item {service}")
     public String getTextServiceHeaderMenuItem(String service) {
         String serviceUp = service.toUpperCase();
         List<WebElement> webElements = headerMenu.getServicesElementList();
@@ -123,6 +131,7 @@ public class HomePage {
         return findElement;
     }
 
+    @Step("Get service left menu item - {service}")
     public String getTextServiceLeftMenuItem(String service) {
 
         List<WebElement> webElements = leftMenu.getListServices();
@@ -137,43 +146,52 @@ public class HomePage {
         return findElement;
     }
 
+    @Step("Click left service")
     public void clickLeftService() {
         leftMenu.getServiceButton().click();
     }
 
+    @Step("Get main header")
     public String getMainHeader() {
         return mainHeader.getText();
     }
 
-
+    @Step("Get Jdi Header")
     public String getJdiHeader() {
         return jdiHeader.getText();
     }
 
+    @Step("Get Header Menu")
     public HeaderMenu getHeaderMenu() {
         return headerMenu;
     }
 
+    @Step("Existing frame")
     public boolean frameIsEnable() {
         return iframe.isEnabled();
     }
 
+    @Step("Existing logo")
     public boolean frameLogoIsEnable() {
         return iframeEpamLogo.isEnabled();
     }
 
+    @Step("Get sub header text")
     public String getSubHeader() {
         return jdiElementLink.getText();
     }
 
+    @Step("Get sub header link")
     public String getSubHeaderLink() {
         return jdiElementLink.getAttribute("href");
     }
 
+    @Step("Existing menu")
     public boolean leftMenuIsEnable() {
         return leftMenu.getLeftBar().isEnabled();
     }
 
+    @Step("Existing footer")
     public boolean footerIsEnable() {
         return footer.getFooterBar().isEnabled();
     }
@@ -194,16 +212,19 @@ public class HomePage {
         return listText;
     }
 
+    @Step("Get Iframe")
     public WebElement getIframe() {
         return iframe;
     }
 
+    @Step("Navigate to Different element page")
     public DifferentElementsPage navigateToDifferentElementsPage() {
         headerMenu.getServiceButton().click();
         headerMenu.getDifferentElementsButton().click();
         return new DifferentElementsPage(driver);
     }
 
+    @Step("Click service header")
     public void clickServiceHeader() {
         headerMenu.getServiceButton().click();
     }

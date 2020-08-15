@@ -1,5 +1,6 @@
 package hw3.pages.components;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,14 +25,17 @@ public class LeftMenu {
         this.driver = driver;
     }
 
+    @Step("Get left bar")
     public WebElement getLeftBar() {
         return leftBar;
     }
 
+    @Step("Get list services")
     public List<WebElement> getListServices() {
         return listServices;
     }
 
+    @Step("Get service button")
     public WebElement getServiceButton() {
         return serviceButton;
     }

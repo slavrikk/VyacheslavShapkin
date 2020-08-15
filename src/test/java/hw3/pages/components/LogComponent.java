@@ -1,5 +1,6 @@
 package hw3.pages.components;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,30 +31,37 @@ public class LogComponent {
         this.driver = driver;
     }
 
+    @Step("Get right log Side bar")
     public WebElement getRightLogSidebar() {
         return rightLogSidebar;
     }
 
+    @Step("Get Log Water text")
     public WebElement getLogWater() {
         return logWater;
     }
 
+    @Step("Get log Wind text")
     public WebElement getLogWind() {
         return logWind;
     }
 
+    @Step("Get log Selen text")
     public WebElement getLogSelen() {
         return logSelen;
     }
 
+    @Step("Get log yellow text")
     public WebElement getLogYellow() {
         return logYellow;
     }
 
+    @Step("Get log uncheck Water text")
     public WebElement getLogUncheckWater() {
         return logUncheckWater;
     }
 
+    @Step("Get log uncheck Wind text")
     public WebElement getLogUncheckWind() {
         return logUncheckWind;
     }
