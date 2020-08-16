@@ -50,13 +50,13 @@ public class TestExerciseTwo {
     icon.click();
     WebElement inputName = driver.findElement(By.id("name"));
     inputName.sendKeys("Roman");
-    WebElement inputPassword = driver.findElement(By.xpath("//input[@id='password']"));
+    WebElement inputPassword = driver.findElement(By.id("password")); //password
     inputPassword.sendKeys("Jdi1234");
 
     WebElement enter = driver.findElement(By.xpath("//span[contains(text(),'Enter')]"));
     enter.click();
 
-    String actualUserName = driver.findElement(By.xpath("//span[@id='user-name']")).getText();
+    String actualUserName = driver.findElement(By.id("user-name")).getText();
     String expectedUserName = "ROMAN IOVLEV";
     Assert.assertEquals(actualUserName, expectedUserName);
   }

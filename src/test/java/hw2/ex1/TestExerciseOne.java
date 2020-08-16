@@ -55,7 +55,7 @@ public class TestExerciseOne {
     WebElement enter = driver.findElement(By.xpath("//span[contains(text(),'Enter')]"));
     enter.click();
 
-    String actualUserName = driver.findElement(By.xpath("//span[@id='user-name']")).getText();
+    String actualUserName = driver.findElement(By.id("user-name")).getText();
     String expectedUserName = "ROMAN IOVLEV";
     Assert.assertEquals(actualUserName, expectedUserName);
   }
@@ -247,7 +247,7 @@ public class TestExerciseOne {
    */
   @Test(priority = 16)
   public void testJdiFrameExist() {
-    WebElement frame = driver.findElement(By.xpath("//iframe[@id='jdi-frame-site']"));
+    WebElement frame = driver.findElement(By.id("jdi-frame-site"));
     boolean existedFrame = frame.isEnabled();
     Assert.assertTrue(existedFrame);
   }
@@ -258,9 +258,9 @@ public class TestExerciseOne {
    */
   @Test(priority = 17)
   public void testJdiFrameEpamLogoExist() {
-    WebElement frame = driver.findElement(By.xpath("//iframe[@id='jdi-frame-site']"));
+    WebElement frame = driver.findElement(By.id("jdi-frame-site"));
     driver.switchTo().frame(frame);
-    WebElement epamLogo = driver.findElement(By.xpath("//img[@id='epam-logo']"));
+    WebElement epamLogo = driver.findElement(By.id("epam-logo"));
     boolean existedLogo = epamLogo.isEnabled();
     Assert.assertTrue(existedLogo);
   }
