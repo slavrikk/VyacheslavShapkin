@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -95,18 +96,19 @@ public class HomePage {
         return imagesList.size();
     }
 
-    public String findTextUnderImage(String text) {
+    public void findTextUnderImage(String expectedText) {
 
+        String actualText = expectedText;
         String findElement = "";
         for (WebElement webElement : listText) {
-            if (webElement.getText().equals(text)) {
+            if (webElement.getText().equals(expectedText)) {
                 findElement = webElement.getText();
                 break;
             }
 
         }
 
-        return findElement;
+        Assert.assertEquals(actualText, findElement);
     }
 
     public String getTextServiceHeaderMenuItem(String service) {

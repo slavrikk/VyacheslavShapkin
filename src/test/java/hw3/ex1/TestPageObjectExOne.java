@@ -82,25 +82,21 @@ public class TestPageObjectExOne extends AbstractTest {
     public void testTextUnderImgOne() {
 
         String expectedText = "To include good practices\nand ideas from successful\nEPAM project";
-        String actualText = homePage.findTextUnderImage(expectedText);
+        homePage.findTextUnderImage(expectedText);
 
-        Assert.assertEquals(actualText, expectedText);
     }
 
     @Test(priority = 11)
     public void testTextUnderImgTwo() {
         String expectedText = "To be flexible and\ncustomizable";
-        String actualText = homePage.findTextUnderImage(expectedText);
+        homePage.findTextUnderImage(expectedText);
 
-        Assert.assertEquals(actualText, expectedText);
     }
 
     @Test(priority = 12)
     public void testTextUnderImgThree() {
         String expectedText = "To be multiplatform";
-        String actualText = homePage.findTextUnderImage(expectedText);
-
-        Assert.assertEquals(actualText, expectedText);
+       homePage.findTextUnderImage(expectedText);
     }
 
     @Test(priority = 13)
@@ -109,8 +105,7 @@ public class TestPageObjectExOne extends AbstractTest {
                 "Already have good base\n(about 20 internal and\n"
                         + "some external projects),\nwish to get more…";
 
-        String actualText = homePage.findTextUnderImage(expectedText);
-        Assert.assertEquals(actualText, expectedText);
+        homePage.findTextUnderImage(expectedText);
     }
 
     @Test(priority = 14)
