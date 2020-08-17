@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="homeWorkFive">
+
+    <test name="testExerciseOne" parallel="none">
+        <classes>
+            <class name="hw5.tests.RunAcceptanceEx1"/>
+        </classes>
+    </test>
+
+    <test name="testExerciseTwo" parallel="none">
+        <classes>
+            <class name="hw5.tests.RunAcceptanceEx2"/>
+        </classes>
+    </test>
+
+    <test name="testExerciseThree" parallel="none">
+        <classes>
+            <class name="hw5.tests.RunAcceptanceEx3"/>
+        </classes>
+    </test>
+
+
+</suite>

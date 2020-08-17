@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eba3fa20-80ed-448a-8b7e-dd4c9ae09d1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +44,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="enabledProfiles">
-      <list>
-        <option value="HW4" />
-      </list>
-    </option>
     <option name="disabledProfiles">
       <list>
         <option value="SumAndSubSuite" />
@@ -68,34 +64,52 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/hw5/ex2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\resources\hw5\ex2" />
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\resources\hw5\ex1" />
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\resources\hw5" />
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\resources" />
+      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hw5.ex1" />
+      <recent name="hw5.ex3" />
+      <recent name="hw5" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hw5.tests" />
+      <recent name="hw5.ex3" />
+      <recent name="hw4.ex2" />
+      <recent name="hw4.ex1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\java\hw5\ex2" />
+      <recent name="C:\Users\Appline_loc\IdeaProjects\VyacheslavShapkin\src\test\resources\hw5\ex2" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test\java" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
       <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\main\resources" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="hw4.ex2" />
-      <recent name="hw4.ex1" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin\src\test" />
-      <recent name="C:\Users\slk\IdeaProjects\VyacheslavShapkin" />
-    </key>
   </component>
-  <component name="RunManager" selected="Maven.Unnamed">
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw3.Test" />
+  <component name="RunManager" selected="TestNG.C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkFiveSuite.xml">
+    <configuration name="Feature: exe3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/hw5/ex3/exe3.feature" />
+      <option name="GLUE" value="hw5.hooks hw5.tests" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="VyacheslavShapkin" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: exe3" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw3.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,38 +117,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="allure:report" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map>
-                <entry key="HW4" value="true" />
-                <entry key="SumAndSubSuite" value="false" />
-                <entry key="AllTestsSuite" value="false" />
-              </map>
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkThreeSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkFiveSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VyacheslavShapkin" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/HomeWorkThreeSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/HomeWorkFiveSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -142,16 +127,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPageObjectExTwo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RunAcceptanceEx1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VyacheslavShapkin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw3.ex2.*" />
+          <option name="PATTERN" value="hw5.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hw3.ex2" />
-      <option name="MAIN_CLASS_NAME" value="hw3.ex2.TestPageObjectExTwo" />
+      <option name="PACKAGE_NAME" value="hw5.ex1" />
+      <option name="MAIN_CLASS_NAME" value="hw5.tests.RunAcceptanceEx1" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -159,18 +144,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPageObjectExTwo.testSelectAndLogsCheckBoxes" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RunAcceptanceEx2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VyacheslavShapkin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw3.ex2.*" />
+          <option name="PATTERN" value="hw5.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hw3.ex2" />
-      <option name="MAIN_CLASS_NAME" value="hw3.ex2.TestPageObjectExTwo" />
-      <option name="METHOD_NAME" value="testSelectAndLogsCheckBoxes" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="hw5.ex2" />
+      <option name="MAIN_CLASS_NAME" value="hw5.tests.RunAcceptanceEx2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunAcceptanceEx3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="VyacheslavShapkin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw5.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw5.tests" />
+      <option name="MAIN_CLASS_NAME" value="hw5.tests.RunAcceptanceEx3" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.Unnamed" />
-        <item itemvalue="TestNG.C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkThreeSuite.xml" />
-        <item itemvalue="TestNG.TestPageObjectExTwo" />
-        <item itemvalue="TestNG.TestPageObjectExTwo.testSelectAndLogsCheckBoxes" />
-        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="TestNG.C:/Users/Appline_loc/IdeaProjects/VyacheslavShapkin/src/test/HomeWorkFiveSuite.xml" />
+        <item itemvalue="TestNG.RunAcceptanceEx3" />
+        <item itemvalue="Cucumber Java.Feature: exe3" />
+        <item itemvalue="TestNG.RunAcceptanceEx1" />
+        <item itemvalue="TestNG.RunAcceptanceEx2" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +206,10 @@
       <workItem from="1596994648839" duration="11035000" />
       <workItem from="1597511732061" duration="7968000" />
       <workItem from="1597522945701" duration="452000" />
+      <workItem from="1597607161131" duration="47000" />
+      <workItem from="1597607219564" duration="9635000" />
+      <workItem from="1597644129130" duration="3382000" />
+      <workItem from="1597657547760" duration="439000" />
     </task>
     <servers />
   </component>
@@ -230,55 +235,85 @@
     <option name="LIMIT_HISTORY" value="false" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="267" y="19" key="#Inspections" timestamp="1597603123256">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1597603123256" />
     <state x="121" y="0" key="#Project_Structure" timestamp="1596967105073">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1596967105073" />
-    <state x="369" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597006189248">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597616180585">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="369" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1597006189248" />
-    <state x="768" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1597004462051">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1597616180585" />
+    <state x="369" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597607032092">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="768" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597004462051" />
-    <state x="580" y="164" key="FileChooserDialogImpl" timestamp="1596459665235">
-      <screen x="0" y="0" width="1600" height="819" />
+    <state x="369" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1597607032092" />
+    <state x="768" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1597646765454">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="768" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597646765454" />
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597646297953">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1597646297953" />
+    <state x="438" y="248" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1597645195559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="438" y="248" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1597645195559" />
+    <state x="464" y="136" key="FileChooserDialogImpl" timestamp="1597603197890">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="464" y="136" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597603197890" />
     <state x="580" y="164" key="FileChooserDialogImpl/0.0.1600.819@0.0.1600.819" timestamp="1596459665235" />
-    <state width="1557" height="243" key="GridCell.Tab.0.bottom" timestamp="1597517792710">
-      <screen x="0" y="0" width="1600" height="819" />
-    </state>
-    <state width="1237" height="175" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="243" key="GridCell.Tab.0.bottom/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
-    <state width="1557" height="243" key="GridCell.Tab.0.center" timestamp="1597517792710">
-      <screen x="0" y="0" width="1600" height="819" />
-    </state>
-    <state width="1237" height="175" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="243" key="GridCell.Tab.0.center/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
-    <state width="1557" height="243" key="GridCell.Tab.0.left" timestamp="1597517792710">
-      <screen x="0" y="0" width="1600" height="819" />
-    </state>
-    <state width="1237" height="175" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597006534493" />
-    <state width="1557" height="243" key="GridCell.Tab.0.left/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
-    <state width="1557" height="243" key="GridCell.Tab.0.right" timestamp="1597517792710">
-      <screen x="0" y="0" width="1600" height="819" />
-    </state>
-    <state width="1237" height="175" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597006534494" />
-    <state width="1557" height="243" key="GridCell.Tab.0.right/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
-    <state x="241" y="0" key="SettingsEditor" timestamp="1597000413472">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1597647537173">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="241" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597000413472" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597647537173" />
+    <state width="1557" height="243" key="GridCell.Tab.0.bottom/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1597647537173">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597647537173" />
+    <state width="1557" height="243" key="GridCell.Tab.0.center/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1597647537173">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597647537173" />
+    <state width="1557" height="243" key="GridCell.Tab.0.left/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1597647537173">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597647537173" />
+    <state width="1557" height="243" key="GridCell.Tab.0.right/0.0.1600.819@0.0.1600.819" timestamp="1597517792710" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1597603409031">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1597603409031" />
+    <state x="241" y="0" key="SettingsEditor" timestamp="1597607205842">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="241" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597607205842" />
     <state x="301" y="54" key="SettingsEditor/0.0.1600.819@0.0.1600.819" timestamp="1596637119859" />
     <state x="182" y="70" key="new project wizard" timestamp="1596624714194">
       <screen x="0" y="0" width="1600" height="819" />
     </state>
     <state x="182" y="70" key="new project wizard/0.0.1600.819@0.0.1600.819" timestamp="1596624714194" />
-    <state x="379" y="1" width="840" height="817" key="search.everywhere.popup" timestamp="1597413424141">
-      <screen x="0" y="0" width="1600" height="819" />
+    <state x="374" y="251" width="823" height="217" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1597603352738">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1596983163197" />
+    <state x="374" y="251" width="823" height="217" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1597603352738" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1597616113202">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1597616113202" />
     <state x="379" y="1" width="840" height="817" key="search.everywhere.popup/0.0.1600.819@0.0.1600.819" timestamp="1597413424141" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VyacheslavShapkin$Scenario__.ic" NAME="Scenario:  Coverage Results" MODIFIED="1597603274408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>
