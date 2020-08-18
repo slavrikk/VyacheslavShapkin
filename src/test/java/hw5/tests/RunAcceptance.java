@@ -9,18 +9,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-@CucumberOptions(features="src/test/resources/hw5/ex2")
-public class RunAcceptanceEx2 extends AbstractTestNGCucumberTests {
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+@CucumberOptions(features= {
+        "src/test/resources/hw5/ex1",
+        "src/test/resources/hw5/ex2",
+        "src/test/resources/hw5/ex3"})
+public class RunAcceptance extends AbstractTestNGCucumberTests {
+
 
     @Before
-    public void setUp() {
+    public void setUp()  {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         TestContext.getInstance().setDriver(driver);
+
     }
 
     @After
     public void tearDown() {
+
         TestContext.getInstance().getDriver().quit();
     }
 }

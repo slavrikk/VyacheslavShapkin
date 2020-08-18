@@ -5,21 +5,8 @@
 
     <test name="testExerciseOne" parallel="none">
         <classes>
-            <class name="hw5.tests.RunAcceptanceEx1"/>
+            <class name="hw5.tests.RunAcceptance"/>
         </classes>
     </test>
-
-    <test name="testExerciseTwo" parallel="none">
-        <classes>
-            <class name="hw5.tests.RunAcceptanceEx2"/>
-        </classes>
-    </test>
-
-    <test name="testExerciseThree" parallel="none">
-        <classes>
-            <class name="hw5.tests.RunAcceptanceEx3"/>
-        </classes>
-    </test>
-
 
 </suite>

@@ -4,3 +4,7 @@ target/
 .idea/
 .allure/
 .idea/workspace.xml
+**/allure-results
+.idea/misc.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml

@@ -229,4 +229,17 @@ public class HomePage {
         headerMenu.getServiceButton().click();
     }
 
+    public WebElement getServiceHeaderMenuItem(String item){
+        String serviceUp = item.toUpperCase();
+        List<WebElement> webElements = headerMenu.getServicesElementList();
+        WebElement findElement = null;
+        for (WebElement webElement : webElements) {
+            if (webElement.getText().equals(serviceUp)) {
+                findElement = webElement;
+                break;
+            }
+        }
+        return findElement;
+    }
+
 }

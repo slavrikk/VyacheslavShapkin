@@ -19,10 +19,9 @@ public class ModelSteps {
         homePage.navigateToDifferentElementsPage();
     }
 
-    @Given("I login as user {string}")
-    public void i_login_as_user(String string) {
-
-        homePage.login("Roman", "Jdi1234");
+    @Given("I login as user Roman Iovlev login {string} password {string}")
+    public void i_login_as_user_Roman_Iovlev_login_password(String login, String password) {
+        homePage.login(login,password);
     }
 
 }

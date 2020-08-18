@@ -1,6 +1,6 @@
 package hw5.context;
 
-import hw3.pages.components.LogComponent;
+import hw3.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,31 +14,34 @@ public class UserTablePage {
     @FindBy(xpath = "//select")
     private List<WebElement> dropDowns;
 
-    @FindBy(xpath = "//td[3]/a")
+    @FindBy(xpath = "//td/a")
     private List<WebElement> userNames;
 
-    @FindBy(xpath = "//div[contains(@class, 'user-descr')]/span")
+    @FindBy(xpath = "//div[@class='user-descr']/span")
     private List<WebElement> descriptions;
 
-    @FindBy(xpath = "//div[contains(@class, 'user-descr')]/input")
+    @FindBy(xpath = "//div[@class='user-descr']/input")
     private List<WebElement> checkboxes;
 
-    @FindBy(xpath = "//tr[2]//td[2]/select/option")
+    @FindBy(xpath = "//tr[2]//option")
     private List<WebElement> optionsTypeForUserRoman;
 
     @FindBy(xpath = "//td[1]")
     private List<WebElement> numberColumn;
 
-    @FindBy(xpath = "//tr[2]//td[2]//select[1]")
+    @FindBy(xpath = "//tr[2]//select")
     private WebElement dropDownForRoman;
 
     @FindBy(xpath = "//li[contains(text(),'Vip: condition changed to true')]")
     private WebElement logVip;
 
     @FindBy(id = "ivan")
-    private WebElement checkboxRoman;
+    private WebElement checkboxIvan;
 
-    private WebDriver driver;
+    private final WebDriver driver;
+
+    private final HomePage homePage =
+            new HomePage(TestContext.getInstance().getDriver());
 
 
     public UserTablePage(WebDriver driver) {
@@ -123,7 +126,7 @@ public class UserTablePage {
         return dropDownForRoman;
     }
 
-    public List<String> getOptionsStringForRoman(){
+    public List<String> getOptionsStringForRoman() {
         List<String> optionStrings = new ArrayList<>();
         for (WebElement option : optionsTypeForUserRoman) {
             optionStrings.add(option.getText());
@@ -131,11 +134,13 @@ public class UserTablePage {
         return optionStrings;
     }
 
-    public WebElement getCheckboxRoman() {
-        return checkboxRoman;
+    public WebElement getCheckboxIvan() {
+        return checkboxIvan;
     }
 
     public WebElement getLogVip() {
         return logVip;
     }
+
+
 }

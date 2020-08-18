@@ -22,16 +22,16 @@ public class AssertionSteps {
             new UserTablePage(TestContext.getInstance().getDriver());
 
     @Then("Browser title should be equal {string}")
-    public void browser_title_should_be_equal(String string) {
-       String actualTitle =  homePage.getTitle();
-        Assert.assertEquals(actualTitle,string);
+    public void browser_title_should_be_equal(String homePageTitle) {
+        String actualTitle = homePage.getTitle();
+        Assert.assertEquals(actualTitle, homePageTitle);
 
     }
 
     @Then("Name should be displayed and equals to expected username {string}")
-    public void name_should_be_displayed_and_equals_to_expected_username(String string) {
-       String actualName = homePage.getUserName();
-       Assert.assertEquals(actualName, string);
+    public void name_should_be_displayed_and_equals_to_expected_username(String userName) {
+        String actualName = homePage.getUserName();
+        Assert.assertEquals(actualName, userName);
     }
 
     @Then("Log rows are displayed and checkbox name and its status are corresponding to selected")
@@ -52,43 +52,40 @@ public class AssertionSteps {
     }
 
     @Then("{string} page should be opened")
-    public void page_should_be_opened(String string) {
+    public void page_should_be_opened(String userTable) {
         String actualResult = userTablePage.getTitle();
-        Assert.assertEquals(actualResult, string);
+        Assert.assertEquals(actualResult, userTable);
     }
 
     @Then("{int} Number Type Dropdowns should be displayed on Users Table on User Table Page")
-    public void number_Type_Dropdowns_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer int1) {
-        int expectedResult = int1;
-        int actualResult = userTablePage.getDropDowns().size();
-        Assert.assertEquals(actualResult, expectedResult);
+    public void number_Type_Dropdowns_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer quantityDropDowns) {
+
+        Integer actualResult = userTablePage.getDropDowns().size();
+        Assert.assertEquals(actualResult, quantityDropDowns);
     }
 
     @Then("{int} Usernames should be displayed on Users Table on User Table Page")
-    public void usernames_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer int1) {
-        int expectedResult = int1;
-        int actualResult = userTablePage.getUserNames().size();
-        Assert.assertEquals(actualResult, expectedResult);
+    public void usernames_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer quantityUserNames) {
+        Integer actualResult = userTablePage.getUserNames().size();
+        Assert.assertEquals(actualResult, quantityUserNames);
     }
 
     @Then("{int} Description texts under images should be displayed on Users Table on User Table Page")
-    public void description_texts_under_images_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer int1) {
-        int expectedResult = int1;
-        int actualResult = userTablePage.getDescriptions().size();
-        Assert.assertEquals(actualResult, expectedResult);
+    public void description_texts_under_images_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer quantityDescriptions) {
+        Integer actualResult = userTablePage.getDescriptions().size();
+        Assert.assertEquals(actualResult, quantityDescriptions);
     }
 
     @Then("{int} checkboxes should be displayed on Users Table on User Table Page")
-    public void checkboxes_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer int1) {
-        int expectedResult = int1;
-        int actualResult = userTablePage.getCheckboxes().size();
-        Assert.assertEquals(actualResult, expectedResult);
+    public void checkboxes_should_be_displayed_on_Users_Table_on_User_Table_Page(Integer quantityCheckboxes) {
+        Integer actualResult = userTablePage.getCheckboxes().size();
+        Assert.assertEquals(actualResult, quantityCheckboxes);
     }
 
     @Test
     @Then("User table should contain following values:")
-    public void user_table_should_contain_following_values(io.cucumber.datatable.DataTable dataTable) {
-        List<List<String>> list = dataTable.asLists(String.class);
+    public void user_table_should_contain_following_values(io.cucumber.datatable.DataTable usersInfoTable) {
+        List<List<String>> list = usersInfoTable.asLists(String.class);
         List<String> userNumbersExpected = new ArrayList<>();
         List<String> userNamesExpected = new ArrayList<>();
         List<String> userDescriptionsExpected = new ArrayList<>();
@@ -104,9 +101,9 @@ public class AssertionSteps {
     }
 
     @Then("droplist should contain values in column Type for user Roman")
-    public void droplist_should_contain_values_in_column_Type_for_user_Roman(io.cucumber.datatable.DataTable dataTable) {
+    public void droplist_should_contain_values_in_column_Type_for_user_Roman(io.cucumber.datatable.DataTable dropListTable) {
         userTablePage.getOptionsTypeForUserRoman().get(0).click();
-        List<String> optionExpected = dataTable.asList();
+        List<String> optionExpected = dropListTable.asList();
         List<String> optionWithoutHead = new ArrayList<>();
         optionExpected.remove("0");
         for (int i = 1; i < optionExpected.size(); i++) {
@@ -116,10 +113,10 @@ public class AssertionSteps {
         Assert.assertEquals(actualResult, optionWithoutHead);
     }
 
-    @Then("{int} log row has {string} text in log section")
-    public void log_row_has_text_in_log_section(Integer int1, String string) {
-       String actualText = userTablePage.getLogVip().getText().substring(9);
-       Assert.assertEquals(actualText, string);
+    @Then("One log row has {string} text in log section")
+    public void log_row_has_text_in_log_section(String expectedText) {
+        String actualText = userTablePage.getLogVip().getText().substring(9);
+        Assert.assertEquals(actualText, expectedText);
     }
 
 }
