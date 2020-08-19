@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="homeWorkThree">
+
+    <test name="testExerciseOne" parallel="none">
+        <classes>
+            <class name="hw3.ex1.TestPageObjectExOne"/>
+        </classes>
+    </test>
+
+    <test name="testExerciseTwo" parallel="none">
+        <classes>
+            <class name="hw3.ex2.TestPageObjectExTwo"/>
+        </classes>
+    </test>
+
+
+</suite>
