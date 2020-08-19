@@ -19,6 +19,7 @@
         <allure.version>2.13.5</allure.version>
         <aspectj.version>1.9.5</aspectj.version>
         <slf4j-simple.version>1.7.30</slf4j-simple.version>
+        <testng.suite.file></testng.suite.file>
     </properties>
 
     <build>
@@ -27,13 +28,19 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/${testng.suite.file}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.source}</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -222,22 +229,12 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
+            <properties>
+                <testng.suite.file>HomeWorkFiveSuite.xml</testng.suite.file>
+            </properties>
             <id>HW5</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>${maven-surefire-version}</version>
-                        <configuration>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/HomeWorkFiveSuite.xml</suiteXmlFile>
-                            </suiteXmlFiles>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
