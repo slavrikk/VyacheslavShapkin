@@ -19,6 +19,7 @@
         <allure.version>2.13.5</allure.version>
         <aspectj.version>1.9.5</aspectj.version>
         <slf4j-simple.version>1.7.30</slf4j-simple.version>
+        <testng.suite.file></testng.suite.file>
     </properties>
 
     <build>
@@ -204,14 +205,23 @@
                             </dependency>
                         </dependencies>
                     </plugin>
-                    <plugin>
-                        <groupId>io.qameta.allure</groupId>
-                        <artifactId>allure-maven</artifactId>
-                        <version>2.10.0</version>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 
 </project>
