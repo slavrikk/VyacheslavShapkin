@@ -2,5 +2,8 @@ target/
 *.iml
 .idea/
 .allure/
-allure-results/
 **/allure-results
+allure-results/
+.idea/**/workspace.xml
+.idea/workspace.xml
+
