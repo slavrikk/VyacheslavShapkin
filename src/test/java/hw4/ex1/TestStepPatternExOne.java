@@ -90,25 +90,22 @@ public class TestStepPatternExOne extends AbstractTest {
     public void testTextUnderImgOne() {
 
         String expectedText = "To include good practices\nand ideas from successful\nEPAM project";
-        String actualText = homePage.findTextUnderImage(expectedText);
+        homePage.findTextUnderImage(expectedText);
 
-        Assert.assertEquals(actualText, expectedText);
     }
 
     @Test(priority = 11, description = "Test text under second image")
     public void testTextUnderImgTwo() {
         String expectedText = "To be flexible and\ncustomizable";
-        String actualText = homePage.findTextUnderImage(expectedText);
+        homePage.findTextUnderImage(expectedText);
 
-        Assert.assertEquals(actualText, expectedText);
     }
 
     @Test(priority = 12, description = "Test text under third image")
     public void testTextUnderImgThree() {
         String expectedText = "To be multiplatform";
-        String actualText = homePage.findTextUnderImage(expectedText);
+        homePage.findTextUnderImage(expectedText);
 
-        Assert.assertEquals(actualText, expectedText);
     }
 
     @Test(priority = 13,description = "Test text under fourth image")
@@ -117,8 +114,8 @@ public class TestStepPatternExOne extends AbstractTest {
                 "Already have good base\n(about 20 internal and\n"
                         + "some external projects),\nwish to get more…";
 
-        String actualText = homePage.findTextUnderImage(expectedText);
-        Assert.assertEquals(actualText, expectedText);
+        homePage.findTextUnderImage(expectedText);
+
     }
 
     @Test(priority = 14, description = "Test Main Header text")
