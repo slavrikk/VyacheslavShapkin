@@ -50,12 +50,6 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>${maven-surefire-version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.sample</groupId>
             <artifactId>sample</artifactId>
             <version>${sample-version}</version>
@@ -171,7 +165,7 @@
 
 
         <profile>
-            <id>HW3</id>
+            <id>HW2</id>
             <build>
                 <plugins>
                     <plugin>
@@ -180,7 +174,7 @@
                         <version>${maven-surefire-version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/HomeWorkThreeSuite.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/HomeWorkTwoSuite.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -188,8 +182,29 @@
             </build>
         </profile>
 
+    <profile>
+            <id>HW3</id>
+            <properties>
+                <testng.suite.file>HomeWorkThreeSuite.xml</testng.suite.file>
+            </properties>
+        </profile>
+
         <profile>
+            <properties>
+                <testng.suite.file>HomeWorkFourSuite.xml</testng.suite.file>
+            </properties>
             <id>HW4</id>
+        </profile>
+
+        <profile>
+            <properties>
+                <testng.suite.file>HomeWorkFourSuiteTestFail.xml</testng.suite.file>
+            </properties>
+            <id>HW4_2</id>
+        </profile>
+
+        <profile>
+            <id>allureReporting</id>
             <build>
                 <plugins>
                     <plugin>
@@ -200,9 +215,6 @@
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/HomeWorkFourSuite.xml</suiteXmlFile>
-                            </suiteXmlFiles>
                         </configuration>
 
                         <dependencies>
@@ -215,6 +227,7 @@
 
                     </plugin>
 
+
                     <plugin>
 
                         <groupId>io.qameta.allure</groupId>
@@ -226,6 +239,7 @@
                         </configuration>
 
                     </plugin>
+
                 </plugins>
             </build>
         </profile>
@@ -238,7 +252,19 @@
         </profile>
     </profiles>
 
-
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 
 
 
