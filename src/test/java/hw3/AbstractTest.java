@@ -36,4 +36,8 @@ public abstract class AbstractTest {
             driver.quit();
         }
     }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 }

@@ -9,41 +9,44 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven-surefire-version>3.0.0-M5</maven-surefire-version>
         <testng-version>7.1.0</testng-version>
         <sample-version>1.0</sample-version>
+        <allure.version>2.13.5</allure.version>
+        <aspectj.version>1.9.5</aspectj.version>
+        <slf4j-simple.version>1.7.30</slf4j-simple.version>
+        <testng.suite.file></testng.suite.file>
     </properties>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/${testng.suite.file}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.source}</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-    <dependencies>
 
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>${maven-surefire-version}</version>
-        </dependency>
+    <dependencies>
 
         <dependency>
             <groupId>com.sample</groupId>
@@ -73,7 +76,19 @@
             <version>4.1.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -156,6 +171,27 @@
 
     <profile>
             <id>HW3</id>
+            <properties>
+                <testng.suite.file>HomeWorkThreeSuite.xml</testng.suite.file>
+            </properties>
+        </profile>
+
+        <profile>
+            <properties>
+                <testng.suite.file>HomeWorkFourSuite.xml</testng.suite.file>
+            </properties>
+            <id>HW4</id>
+        </profile>
+
+        <profile>
+            <properties>
+                <testng.suite.file>HomeWorkFourSuiteTestFail.xml</testng.suite.file>
+            </properties>
+            <id>HW4_2</id>
+        </profile>
+
+        <profile>
+            <id>allureReporting</id>
             <build>
                 <plugins>
                     <plugin>
@@ -163,13 +199,35 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>${maven-surefire-version}</version>
                         <configuration>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/HomeWorkThreeSuite.xml</suiteXmlFile>
-                            </suiteXmlFiles>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
                         </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.aspectj</groupId>
+                                <artifactId>aspectjweaver</artifactId>
+                                <version>${aspectj.version}</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
 </project>
