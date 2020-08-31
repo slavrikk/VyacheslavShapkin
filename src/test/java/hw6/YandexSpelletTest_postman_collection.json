@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "cf87f03c-e0f0-422c-a789-07cadf436c88",
+		"name": "YandexSpelletTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckText",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a91d0674-f524-4ea1-acb0-18c38c682854",
+						"exec": [
+							"pm.test(\"Status is ok, response is json\", function () {\r",
+							"    pm.response.to.be.ok; \r",
+							"    pm.response.to.have.status(200)\r",
+							"    pm.response.to.be.json;\r",
+							"    const responseJson = pm.response.json();\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check status code number from json response\", function () {\r",
+							"const responseJson = pm.response.json();\r",
+							"var jsonArrayData = pm.response.json();\r",
+							"pm.expect(responseJson[0].code).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check quantity array`s elements\", function () {\r",
+							"const responseJson = pm.response.json();\r",
+							"var list = responseJson[0].s.length\r",
+							"pm.expect(list).to.eql(3)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/checkText?text={{checkSingleWord}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"checkText"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "{{checkSingleWord}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckTexts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0f59efb3-d9f7-495e-9943-b2be166f86ac",
+						"exec": [
+							"pm.test(\"Status is ok, response is json\", function () {\r",
+							"    pm.response.to.be.ok; \r",
+							"    pm.response.to.have.status(200)\r",
+							"    pm.response.to.be.json;\r",
+							"    const responseJson = pm.response.json();\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check status code number from json response\", function () {\r",
+							"const responseJson = pm.response.json();\r",
+							"var jsonArrayData = pm.response.json();\r",
+							"pm.expect(responseJson[0][0].code).to.eql(1);\r",
+							"pm.expect(responseJson[0][1].code).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check quantity s array`s elements\", function () {\r",
+							"const responseJson = pm.response.json();\r",
+							"var list = responseJson[0][0].s.length\r",
+							"var list2 = responseJson[0][1].s.length\r",
+							"\r",
+							"pm.expect(list).to.eql(1)\r",
+							"pm.expect(list2).to.eql(4)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/checkTexts?text={{checkSingleWord}}+{{checkSecondWord}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"checkTexts"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "{{checkSingleWord}}+{{checkSecondWord}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckTextRightWord",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a2a44324-9cb6-42a4-9ccf-6897dcf9e8c6",
+						"exec": [
+							"pm.test(\"Status is ok, response is json\", function () {\r",
+							"    pm.response.to.be.ok; \r",
+							"    pm.response.to.have.status(200)\r",
+							"    pm.response.to.be.json;\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.length).to.eql(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/checkText?text=привет",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"checkText"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "привет"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
