@@ -30,9 +30,6 @@ public class MetalAndColorsPage extends WebPage {
     @Css("#elements-checklist label")
     public static JList<Label> elements;
 
-    @FindBy(xpath = "//input[@id='g1']")
-    public static Checkbox checkbox;
-
     public static String titleMetalAndColorsPage = "Metal and Colors";
 
     @JDropdown(
@@ -108,6 +105,5 @@ public class MetalAndColorsPage extends WebPage {
         List<String> actualList = new ArrayList<>(Arrays.asList(mass));
         assertThat(actualList).containsExactlyInAnyOrderElementsOf(expectedDataVegetable);
     }
-
 
 }
