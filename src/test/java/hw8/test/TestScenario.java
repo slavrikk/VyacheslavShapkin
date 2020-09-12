@@ -1,7 +1,8 @@
 package hw8.test;
 
 import hw8.DataProviderHw8;
-import hw8.beans.ExampleData;
+import hw8.JdiSite;
+import hw8.beans.MetalsAndColorsTestData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -26,25 +27,12 @@ public class TestScenario implements TestInit {
     }
 
     @org.testng.annotations.Test(dataProviderClass = DataProviderHw8.class, dataProvider = "data")
-    public void scenariosTest(ExampleData exampleData) throws InterruptedException {
+    public void scenariosTest(MetalsAndColorsTestData entity) {
 
-        radioButtonsOdd.select(exampleData.getSummary().get(0));
-        radioButtonsEven.select(exampleData.getSummary().get(1));
-        clickElements(exampleData.getElements());
-        colors.select(exampleData.getColor());
-        metals.select(exampleData.getMetals());
-        clickVegetables(exampleData.getVegetables());
+       metalsAndColorsForm.submit(entity);
 
-        submitButton.click();
+       verifyResults(entity.expectedResult());
 
-        checkSummary(exampleData.getSummary());
-        checkElements(exampleData.getElements());
-        checkColor(exampleData.getColor());
-        checkMetal(exampleData.getMetals());
-        checkVegetables(exampleData.getVegetables());
-
-        clickVegetables(exampleData.getVegetables());
-        clickElements(exampleData.getElements());
-
+        JdiSite.openMetalAndColorsPage();
     }
 }

@@ -19,6 +19,10 @@ public class JdiSite {
         jdiHomePage.open();
     }
 
+    public static void openMetalAndColorsPage(){
+        metalAndColorsPage.open();
+    }
+
     public static void login(User user) {
         jdiHomePage.login(user);
     }

@@ -2,9 +2,11 @@ package hw8.beans;
 
 import com.google.gson.annotations.Expose;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class ExampleData {
+public class MetalsAndColorsTestData {
 
     @Expose
     private List<String> summary;
@@ -20,6 +22,15 @@ public class ExampleData {
 
     @Expose
     private List<String> vegetables;
+
+    public List<String> expectedResult() {
+        return Arrays.asList(
+                "Summary: " + getSummary().stream().mapToInt(Integer::parseInt).sum(),
+                "Elements: " + getElements().toString().replace("[", "").replace("]", ""),
+                "Color: " + getColor(),
+                "Metal: " + getMetals(),
+                "Vegetables: " + getVegetables().toString().replace("[", "").replace("]", ""));
+    }
 
     public List<String> getSummary() {
         return summary;
@@ -60,4 +71,5 @@ public class ExampleData {
     public void setVegetables(List<String> vegetables) {
         this.vegetables = vegetables;
     }
+
 }
