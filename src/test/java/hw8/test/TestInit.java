@@ -9,6 +9,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import static com.epam.jdi.light.elements.init.PageFactory.initSite;
+import static hw8.JdiSite.*;
+import static hw8.entities.User.ROMAN;
 
 public interface TestInit {
     final String pathToDriver = "src\\test\\resources\\driver\\chromedriver.exe";
