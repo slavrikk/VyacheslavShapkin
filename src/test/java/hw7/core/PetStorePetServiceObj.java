@@ -1,6 +1,7 @@
 package hw7.core;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import hw7.bean.CategoryBean;
 import hw7.bean.PetBean;
 import hw7.bean.ResponseBean;
@@ -9,6 +10,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 
+import java.lang.reflect.Modifier;
 import java.net.URI;
 
 public class PetStorePetServiceObj {
@@ -32,6 +34,7 @@ public class PetStorePetServiceObj {
 
         private final PetBean petBean = new PetBean();
         private Method requestMethod = Method.GET;
+        private String contentType;
 
         public ApiRequestBuilder setMethod(Method method) {
             requestMethod = method;
@@ -46,6 +49,20 @@ public class PetStorePetServiceObj {
         public ApiRequestBuilder setName(String name) {
             petBean.setName(name);
             return this;
+        }
+
+        public ApiRequestBuilder setStatus(String status) {
+            petBean.setStatus(status);
+            return this;
+        }
+
+        public ApiRequestBuilder setContentType(String contentType) {
+            petBean.setContentType(contentType);
+            return this;
+        }
+
+        public String getContentType() {
+            return contentType;
         }
 
         public ApiRequestBuilder setCategory(int categoryId, String categoryName) {
@@ -83,23 +100,26 @@ public class PetStorePetServiceObj {
                 .prettyPeek();
     }
 
-    public io.restassured.response.Response sendRequest() {
-        Gson gson = new Gson();
-        return RestAssured
-                .given().log().all()
-                .contentType(ContentType.JSON)
-                .body(gson.toJson(petBean))
-                .request(requestMethod, PETSTORE_URI)
-                .prettyPeek();
-    }
 
-    public io.restassured.response.Response sendRequestChangeNamePost(String id, String newName, String newStatus) {
-        Gson gson = new Gson();
+    public io.restassured.response.Response sendRequest() {
+      Gson gson = new Gson();
+      ContentType contentType;
+      String body;
+      String id = "";
+        if(petBean.getContentType().equals("URLENC")){
+            contentType =  ContentType.URLENC;
+            body = "name=" + petBean.getName() + "&" + "status=" + petBean.getStatus();
+            id = String.valueOf(petBean.getId());
+        }
+        else {
+            contentType = ContentType.JSON;
+            body = gson.toJson(petBean);
+        }
         return RestAssured
                 .given().log().all()
-                .contentType(ContentType.URLENC)
-                .body("name=" + newName + "&" + "status=" + newStatus)
-                .request(requestMethod, PETSTORE_URI + id)
+                .contentType(contentType)
+                .body(body)
+                .request(requestMethod, PETSTORE_URI+id)
                 .prettyPeek();
     }
 

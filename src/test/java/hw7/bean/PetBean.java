@@ -19,6 +19,16 @@ public class PetBean {
     @Expose
     private String status = "available";
 
+    private transient String contentType = "JSON";
+
+    public String getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
     public int getId() {
         return id;
     }

@@ -259,6 +259,12 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <properties>
+                <testng.suite.file>HomeWorkSevenSuite.xml</testng.suite.file>
+            </properties>
+            <id>HW7</id>
+        </profile>
 
         <profile>
             <properties>
