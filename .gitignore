@@ -9,4 +9,5 @@ target/
 .idea/jarRepositories.xml
 /allure-results
 .idea/**/workspace.xml
-
+src/test/java/.logs
+*.txt
