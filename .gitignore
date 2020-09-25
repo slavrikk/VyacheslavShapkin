@@ -10,3 +10,5 @@ target/
 /allure-results
 .idea/**/workspace.xml
 src/test/java/.logs
+*.txt
+
